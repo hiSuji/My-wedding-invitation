@@ -2,6 +2,7 @@
 
 *Looking for a shareable component template instead? You can [use SvelteKit for that as well](https://kit.svelte.dev/docs#packaging) or the older [sveltejs/component-template](https://github.com/sveltejs/component-template)*
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/c07f7619-fc6a-4f1b-b9e6-b00eb2b8f2c3/deploy-status)](https://app.netlify.com/sites/sjwwlov/deploys)
 ---
 
 # svelte app
