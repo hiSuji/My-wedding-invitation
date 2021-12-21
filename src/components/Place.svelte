@@ -93,7 +93,7 @@
   <div class="flex flex-row justify-center mb-3">
     <Fa size="lg" color="cadetblue" icon="{faCar}" class="mr-2" />
     <p class="mr-4 font-semibold">주차정보</p>
-    <span>자체 150대, 외부 발렛(무료) 500대</span>
+    <span>자체 150대, 무료 발렛(외부 600대)</span>
   </div>
   <div class="flex flex-row justify-center">
     <Fa size="lg" color="cadetblue" icon="{faBus}" class="mr-2" />

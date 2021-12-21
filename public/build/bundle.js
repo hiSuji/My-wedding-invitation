@@ -714,26 +714,27 @@ var app = (function () {
     			t10 = space();
     			p3 = element("p");
     			p3.textContent = "더청담 2F 노블레스홀";
-    			attr_dev(div0, "class", "basis-1/3");
+    			attr_dev(div0, "class", "basis-1/3l");
     			add_location(div0, file$f, 11, 2, 200);
-    			attr_dev(p0, "class", "border-b-4 border-yellow-200");
-    			add_location(p0, file$f, 13, 4, 265);
-    			add_location(p1, file$f, 14, 4, 317);
+    			attr_dev(p0, "class", "border-b-4 border-yellow-200 font-semibold");
+    			add_location(p0, file$f, 13, 4, 266);
+    			attr_dev(p1, "class", "font-semibold");
+    			add_location(p1, file$f, 14, 4, 332);
     			attr_dev(div1, "class", "basis-1/3");
-    			add_location(div1, file$f, 12, 2, 236);
+    			add_location(div1, file$f, 12, 2, 237);
     			attr_dev(div2, "class", "basis-1/3");
-    			add_location(div2, file$f, 16, 2, 340);
+    			add_location(div2, file$f, 16, 2, 377);
     			attr_dev(div3, "class", "flex flex-row justify-around items-center text-2xl my-6");
     			add_location(div3, file$f, 10, 0, 127);
     			if (!src_url_equal(img.src, img_src_value = /*welcomeSrc*/ ctx[0])) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "welcome");
-    			add_location(img, file$f, 19, 2, 424);
+    			add_location(img, file$f, 19, 2, 461);
     			attr_dev(div4, "class", "flex mb-2 justify-center");
-    			add_location(div4, file$f, 18, 0, 382);
-    			add_location(p2, file$f, 22, 2, 510);
-    			add_location(p3, file$f, 23, 2, 530);
-    			attr_dev(div5, "class", "text-right text-sm");
-    			add_location(div5, file$f, 21, 0, 474);
+    			add_location(div4, file$f, 18, 0, 419);
+    			add_location(p2, file$f, 22, 2, 561);
+    			add_location(p3, file$f, 23, 2, 581);
+    			attr_dev(div5, "class", "text-right text-sm font-semibold");
+    			add_location(div5, file$f, 21, 0, 511);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -11790,7 +11791,7 @@ var app = (function () {
     			p3.textContent = "주차정보";
     			t13 = space();
     			span0 = element("span");
-    			span0.textContent = "자체 150대, 외부 발렛(무료) 500대";
+    			span0.textContent = "자체 150대, 무료 발렛(외부 600대)";
     			t15 = space();
     			div7 = element("div");
     			create_component(fa2.$$.fragment);
