@@ -1,0 +1,8 @@
+@tailwind base;
+
+.font-nanum-myeongjo {
+  font-family: "Nanum Myeongjo", serif;
+}
+
+@tailwind components;
+@tailwind utilities;
