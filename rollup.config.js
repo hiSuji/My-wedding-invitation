@@ -55,6 +55,7 @@ export default {
       SVELTE_APP_STORAGE_BUCKET: JSON.stringify(
         process.env.SVELTE_APP_STORAGE_BUCKET
       ),
+      preventAssignment: true,
     }),
     svelte(require("./svelte.config")),
 

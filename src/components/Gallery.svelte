@@ -1,8 +1,14 @@
 <script>
-  import Gallery from "svelte-image-gallery";
   import { listImage } from "../service/firebase";
   import { getDownloadURL } from "firebase/storage";
   import { onMount } from "svelte";
+  import Carousel from "svelte-carousel";
+
+  import Fa from "svelte-fa";
+  import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
+  import { faChevronLeft } from "@fortawesome/free-solid-svg-icons";
+
+  import CustomDot from "@/components/common/CustomDot.svelte";
 
   export let flowerSrc;
 
@@ -53,21 +59,72 @@
 </script>
 
 <style>
-  /* your styles go here */
+  .color-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+  }
+
+  .custom-arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 7px;
+  }
+  .custom-arrow:active {
+    background-color: #fffff2;
+  }
+
+  @media only screen and (max-width: 576px) {
+    .gallery-size {
+      width: fit-content;
+      padding: 0 2px;
+    }
+  }
+  @media (min-width: 800px) {
+    .gallery-size {
+      height: 75%;
+      width: auto;
+    }
+  }
 </style>
 
-<!-- markup (zero or more items) goes here -->
 <div class="flex justify-center mt-20">
   <img src="{flowerSrc}" alt="flower" class="w-8" />
 </div>
 <div class="text-center">
   <p class="text-xs mb-8 tracking-widest">아름다운순간</p>
 </div>
-<!-- <button on:click="{handleClick}"> Click me </button> -->
-<Gallery gap="10" maxColumnWidth="{isMobile ? '120' : '200'}">
-  {#each weddingImages as weddingImage}
-    <img src="{weddingImage}" alt="weddingPhoto" />
-  {:else}
-    <img src="https://via.placeholder.com/150" alt="sample" />
-  {/each}
-</Gallery>
+{#key weddingImages}
+  <Carousel
+    autoplay
+    autoplayDuration="{2500}"
+    pauseOnFocus
+    let:showPrevPage
+    let:showNextPage
+    let:currentPageIndex
+    let:pagesCount
+    let:showPage
+  >
+    <div slot="prev" on:click="{showPrevPage}" class="custom-arrow">
+      <Fa size="lg" color="#F9E79F" icon="{faChevronLeft}" />
+    </div>
+    <div slot="dots" class="flex">
+      {#each Array(pagesCount) as _, pageIndex (pageIndex)}
+        <CustomDot
+          active="{currentPageIndex === pageIndex}"
+          on:click="{() => showPage(pageIndex)}"
+        />
+      {/each}
+    </div>
+    {#each weddingImages as weddingImage}
+      <div class="color-container">
+        <img src="{weddingImage}" alt="weddingPhoto" class="gallery-size" />
+      </div>
+    {/each}
+    <div slot="next" on:click="{showNextPage}" class="custom-arrow">
+      <Fa size="lg" color="#F9E79F" icon="{faChevronRight}" />
+    </div>
+  </Carousel>
+{/key}
