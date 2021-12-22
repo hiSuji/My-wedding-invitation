@@ -94,7 +94,7 @@
         />
       {/each}
     </div>
-    {#if weddingImages.length !== 0}
+    {#if weddingImages.length === 0}
       <img
         src="https://via.placeholder.com/300x200/FFFFFF/D8D8D8/?text=loading"
         alt="sampleImage"
