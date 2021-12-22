@@ -16291,7 +16291,7 @@ var app = (function () {
     	loaded: /*loaded*/ ctx[5]
     });
 
-    // (255:4) {#if arrows}
+    // (254:4) {#if arrows}
     function create_if_block_3(ctx) {
     	let current;
     	const prev_slot_template = /*#slots*/ ctx[37].prev;
@@ -16347,14 +16347,14 @@ var app = (function () {
     		block,
     		id: create_if_block_3.name,
     		type: "if",
-    		source: "(255:4) {#if arrows}",
+    		source: "(254:4) {#if arrows}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (256:60)           
+    // (255:60)           
     function fallback_block_2(ctx) {
     	let div;
     	let arrow;
@@ -16375,7 +16375,7 @@ var app = (function () {
     			div = element("div");
     			create_component(arrow.$$.fragment);
     			attr_dev(div, "class", "sc-carousel__arrow-container svelte-zakxpw");
-    			add_location(div, file$d, 256, 8, 6291);
+    			add_location(div, file$d, 255, 8, 6289);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -16406,14 +16406,14 @@ var app = (function () {
     		block,
     		id: fallback_block_2.name,
     		type: "fallback",
-    		source: "(256:60)           ",
+    		source: "(255:60)           ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (293:6) {#if autoplayProgressVisible}
+    // (292:6) {#if autoplayProgressVisible}
     function create_if_block_2(ctx) {
     	let div;
     	let progress;
@@ -16429,7 +16429,7 @@ var app = (function () {
     			div = element("div");
     			create_component(progress.$$.fragment);
     			attr_dev(div, "class", "sc-carousel-progress__container svelte-zakxpw");
-    			add_location(div, file$d, 293, 8, 7421);
+    			add_location(div, file$d, 292, 8, 7419);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -16460,14 +16460,14 @@ var app = (function () {
     		block,
     		id: create_if_block_2.name,
     		type: "if",
-    		source: "(293:6) {#if autoplayProgressVisible}",
+    		source: "(292:6) {#if autoplayProgressVisible}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (299:4) {#if arrows}
+    // (298:4) {#if arrows}
     function create_if_block_1$1(ctx) {
     	let current;
     	const next_slot_template = /*#slots*/ ctx[37].next;
@@ -16523,14 +16523,14 @@ var app = (function () {
     		block,
     		id: create_if_block_1$1.name,
     		type: "if",
-    		source: "(299:4) {#if arrows}",
+    		source: "(298:4) {#if arrows}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (300:60)           
+    // (299:60)           
     function fallback_block_1(ctx) {
     	let div;
     	let arrow;
@@ -16551,7 +16551,7 @@ var app = (function () {
     			div = element("div");
     			create_component(arrow.$$.fragment);
     			attr_dev(div, "class", "sc-carousel__arrow-container svelte-zakxpw");
-    			add_location(div, file$d, 300, 8, 7643);
+    			add_location(div, file$d, 299, 8, 7641);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -16582,15 +16582,15 @@ var app = (function () {
     		block,
     		id: fallback_block_1.name,
     		type: "fallback",
-    		source: "(300:60)           ",
+    		source: "(299:60)           ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (311:2) {#if dots}
-    function create_if_block$2(ctx) {
+    // (310:2) {#if dots}
+    function create_if_block$3(ctx) {
     	let current;
     	const dots_slot_template = /*#slots*/ ctx[37].dots;
     	const dots_slot = create_slot(dots_slot_template, ctx, /*$$scope*/ ctx[36], get_dots_slot_context);
@@ -16643,16 +16643,16 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block$2.name,
+    		id: create_if_block$3.name,
     		type: "if",
-    		source: "(311:2) {#if dots}",
+    		source: "(310:2) {#if dots}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (317:5)         
+    // (316:5)         
     function fallback_block$1(ctx) {
     	let dots_1;
     	let current;
@@ -16699,7 +16699,7 @@ var app = (function () {
     		block,
     		id: fallback_block$1.name,
     		type: "fallback",
-    		source: "(317:5)         ",
+    		source: "(316:5)         ",
     		ctx
     	});
 
@@ -16724,7 +16724,7 @@ var app = (function () {
     	const default_slot = create_slot(default_slot_template, ctx, /*$$scope*/ ctx[36], get_default_slot_context);
     	let if_block1 = /*autoplayProgressVisible*/ ctx[3] && create_if_block_2(ctx);
     	let if_block2 = /*arrows*/ ctx[1] && create_if_block_1$1(ctx);
-    	let if_block3 = /*dots*/ ctx[4] && create_if_block$2(ctx);
+    	let if_block3 = /*dots*/ ctx[4] && create_if_block$3(ctx);
 
     	const block = {
     		c: function create() {
@@ -16745,13 +16745,13 @@ var app = (function () {
     			set_style(div0, "transform", "translateX(" + /*offset*/ ctx[8] + "px)");
     			set_style(div0, "transition-duration", /*durationMs*/ ctx[9] + "ms");
     			set_style(div0, "transition-timing-function", /*timingFunction*/ ctx[0]);
-    			add_location(div0, file$d, 275, 6, 6748);
+    			add_location(div0, file$d, 274, 6, 6746);
     			attr_dev(div1, "class", "sc-carousel__pages-window svelte-zakxpw");
-    			add_location(div1, file$d, 265, 4, 6540);
+    			add_location(div1, file$d, 264, 4, 6538);
     			attr_dev(div2, "class", "sc-carousel__content-container svelte-zakxpw");
-    			add_location(div2, file$d, 253, 2, 6157);
+    			add_location(div2, file$d, 252, 2, 6155);
     			attr_dev(div3, "class", "sc-carousel__carousel-container svelte-zakxpw");
-    			add_location(div3, file$d, 252, 0, 6108);
+    			add_location(div3, file$d, 251, 0, 6106);
     		},
     		l: function claim(nodes) {
     			throw new Error_1("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -16906,7 +16906,7 @@ var app = (function () {
     						transition_in(if_block3, 1);
     					}
     				} else {
-    					if_block3 = create_if_block$2(ctx);
+    					if_block3 = create_if_block$3(ctx);
     					if_block3.c();
     					transition_in(if_block3, 1);
     					if_block3.m(div3, null);
@@ -17647,7 +17647,7 @@ var app = (function () {
     const file$c = "node_modules\\svelte-fa\\src\\fa.svelte";
 
     // (79:0) {#if i[4]}
-    function create_if_block$1(ctx) {
+    function create_if_block$2(ctx) {
     	let svg;
     	let g1;
     	let g0;
@@ -17739,7 +17739,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block$1.name,
+    		id: create_if_block$2.name,
     		type: "if",
     		source: "(79:0) {#if i[4]}",
     		ctx
@@ -17891,7 +17891,7 @@ var app = (function () {
 
     function create_fragment$d(ctx) {
     	let if_block_anchor;
-    	let if_block = /*i*/ ctx[7][4] && create_if_block$1(ctx);
+    	let if_block = /*i*/ ctx[7][4] && create_if_block$2(ctx);
 
     	const block = {
     		c: function create() {
@@ -17910,7 +17910,7 @@ var app = (function () {
     				if (if_block) {
     					if_block.p(ctx, dirty);
     				} else {
-    					if_block = create_if_block$1(ctx);
+    					if_block = create_if_block$2(ctx);
     					if_block.c();
     					if_block.m(if_block_anchor.parentNode, if_block_anchor);
     				}
@@ -18478,64 +18478,19 @@ var app = (function () {
 
     function get_each_context_1(ctx, list, i) {
     	const child_ctx = ctx.slice();
-    	child_ctx[12] = list[i];
+    	child_ctx[11] = list[i];
     	return child_ctx;
     }
 
     function get_each_context(ctx, list, i) {
     	const child_ctx = ctx.slice();
-    	child_ctx[9] = list[i];
-    	child_ctx[11] = i;
+    	child_ctx[8] = list[i];
+    	child_ctx[10] = i;
     	return child_ctx;
     }
 
-    // (122:4) {#each weddingImages as weddingImage}
-    function create_each_block_1(ctx) {
-    	let div;
-    	let img;
-    	let img_src_value;
-    	let t;
-
-    	const block = {
-    		c: function create() {
-    			div = element("div");
-    			img = element("img");
-    			t = space();
-    			if (!src_url_equal(img.src, img_src_value = /*weddingImage*/ ctx[12])) attr_dev(img, "src", img_src_value);
-    			attr_dev(img, "alt", "weddingPhoto");
-    			attr_dev(img, "class", "gallery-size svelte-m2mpfv");
-    			add_location(img, file$a, 123, 8, 3110);
-    			attr_dev(div, "class", "color-container svelte-m2mpfv");
-    			add_location(div, file$a, 122, 6, 3071);
-    		},
-    		m: function mount(target, anchor) {
-    			insert_dev(target, div, anchor);
-    			append_dev(div, img);
-    			append_dev(div, t);
-    		},
-    		p: function update(ctx, dirty) {
-    			if (dirty & /*weddingImages*/ 2 && !src_url_equal(img.src, img_src_value = /*weddingImage*/ ctx[12])) {
-    				attr_dev(img, "src", img_src_value);
-    			}
-    		},
-    		d: function destroy(detaching) {
-    			if (detaching) detach_dev(div);
-    		}
-    	};
-
-    	dispatch_dev("SvelteRegisterBlock", {
-    		block,
-    		id: create_each_block_1.name,
-    		type: "each",
-    		source: "(122:4) {#each weddingImages as weddingImage}",
-    		ctx
-    	});
-
-    	return block;
-    }
-
-    // (101:2) <Carousel      autoplay      autoplayDuration="{2500}"      pauseOnFocus      let:showPrevPage      let:showNextPage      let:currentPageIndex      let:pagesCount      let:showPage    >
-    function create_default_slot$3(ctx) {
+    // (98:4) {#if weddingImages.length !== 0}
+    function create_if_block$1(ctx) {
     	let each_1_anchor;
     	let each_value_1 = /*weddingImages*/ ctx[1];
     	validate_each_argument(each_value_1);
@@ -18593,16 +18548,106 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot$3.name,
-    		type: "slot",
-    		source: "(101:2) <Carousel      autoplay      autoplayDuration=\\\"{2500}\\\"      pauseOnFocus      let:showPrevPage      let:showNextPage      let:currentPageIndex      let:pagesCount      let:showPage    >",
+    		id: create_if_block$1.name,
+    		type: "if",
+    		source: "(98:4) {#if weddingImages.length !== 0}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (111:4) 
+    // (105:6) {#each weddingImages as weddingImage}
+    function create_each_block_1(ctx) {
+    	let div;
+    	let img;
+    	let img_src_value;
+    	let t;
+
+    	const block = {
+    		c: function create() {
+    			div = element("div");
+    			img = element("img");
+    			t = space();
+    			if (!src_url_equal(img.src, img_src_value = /*weddingImage*/ ctx[11].url)) attr_dev(img, "src", img_src_value);
+    			attr_dev(img, "alt", "weddingPhoto");
+    			attr_dev(img, "class", "gallery-size svelte-mta0sx");
+    			add_location(img, file$a, 106, 10, 2720);
+    			attr_dev(div, "class", "image-container svelte-mta0sx");
+    			add_location(div, file$a, 105, 8, 2679);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, div, anchor);
+    			append_dev(div, img);
+    			append_dev(div, t);
+    		},
+    		p: function update(ctx, dirty) {
+    			if (dirty & /*weddingImages*/ 2 && !src_url_equal(img.src, img_src_value = /*weddingImage*/ ctx[11].url)) {
+    				attr_dev(img, "src", img_src_value);
+    			}
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(div);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_each_block_1.name,
+    		type: "each",
+    		source: "(105:6) {#each weddingImages as weddingImage}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (77:2) <Carousel      autoplay      autoplayDuration="{2500}"      pauseOnFocus      let:showPrevPage      let:showNextPage      let:currentPageIndex      let:pagesCount      let:showPage    >
+    function create_default_slot$3(ctx) {
+    	let if_block_anchor;
+    	let if_block = /*weddingImages*/ ctx[1].length !== 0 && create_if_block$1(ctx);
+
+    	const block = {
+    		c: function create() {
+    			if (if_block) if_block.c();
+    			if_block_anchor = empty();
+    		},
+    		m: function mount(target, anchor) {
+    			if (if_block) if_block.m(target, anchor);
+    			insert_dev(target, if_block_anchor, anchor);
+    		},
+    		p: function update(ctx, dirty) {
+    			if (/*weddingImages*/ ctx[1].length !== 0) {
+    				if (if_block) {
+    					if_block.p(ctx, dirty);
+    				} else {
+    					if_block = create_if_block$1(ctx);
+    					if_block.c();
+    					if_block.m(if_block_anchor.parentNode, if_block_anchor);
+    				}
+    			} else if (if_block) {
+    				if_block.d(1);
+    				if_block = null;
+    			}
+    		},
+    		d: function destroy(detaching) {
+    			if (if_block) if_block.d(detaching);
+    			if (detaching) detach_dev(if_block_anchor);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_default_slot$3.name,
+    		type: "slot",
+    		source: "(77:2) <Carousel      autoplay      autoplayDuration=\\\"{2500}\\\"      pauseOnFocus      let:showPrevPage      let:showNextPage      let:currentPageIndex      let:pagesCount      let:showPage    >",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (87:4) 
     function create_prev_slot(ctx) {
     	let div;
     	let fa;
@@ -18624,8 +18669,8 @@ var app = (function () {
     			div = element("div");
     			create_component(fa.$$.fragment);
     			attr_dev(div, "slot", "prev");
-    			attr_dev(div, "class", "custom-arrow svelte-m2mpfv");
-    			add_location(div, file$a, 110, 4, 2622);
+    			attr_dev(div, "class", "custom-arrow svelte-mta0sx");
+    			add_location(div, file$a, 86, 4, 2008);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -18637,7 +18682,7 @@ var app = (function () {
     					div,
     					"click",
     					function () {
-    						if (is_function(/*showPrevPage*/ ctx[4])) /*showPrevPage*/ ctx[4].apply(this, arguments);
+    						if (is_function(/*showPrevPage*/ ctx[3])) /*showPrevPage*/ ctx[3].apply(this, arguments);
     					},
     					false,
     					false,
@@ -18671,26 +18716,26 @@ var app = (function () {
     		block,
     		id: create_prev_slot.name,
     		type: "slot",
-    		source: "(111:4) ",
+    		source: "(87:4) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (115:6) {#each Array(pagesCount) as _, pageIndex (pageIndex)}
+    // (91:6) {#each Array(pagesCount) as _, pageIndex (pageIndex)}
     function create_each_block(key_1, ctx) {
     	let first;
     	let customdot;
     	let current;
 
     	function click_handler() {
-    		return /*click_handler*/ ctx[2](/*showPage*/ ctx[8], /*pageIndex*/ ctx[11]);
+    		return /*click_handler*/ ctx[2](/*showPage*/ ctx[7], /*pageIndex*/ ctx[10]);
     	}
 
     	customdot = new CustomDot({
     			props: {
-    				active: /*currentPageIndex*/ ctx[6] === /*pageIndex*/ ctx[11]
+    				active: /*currentPageIndex*/ ctx[5] === /*pageIndex*/ ctx[10]
     			},
     			$$inline: true
     		});
@@ -18713,7 +18758,7 @@ var app = (function () {
     		p: function update(new_ctx, dirty) {
     			ctx = new_ctx;
     			const customdot_changes = {};
-    			if (dirty & /*currentPageIndex, pagesCount*/ 192) customdot_changes.active = /*currentPageIndex*/ ctx[6] === /*pageIndex*/ ctx[11];
+    			if (dirty & /*currentPageIndex, pagesCount*/ 96) customdot_changes.active = /*currentPageIndex*/ ctx[5] === /*pageIndex*/ ctx[10];
     			customdot.$set(customdot_changes);
     		},
     		i: function intro(local) {
@@ -18735,22 +18780,22 @@ var app = (function () {
     		block,
     		id: create_each_block.name,
     		type: "each",
-    		source: "(115:6) {#each Array(pagesCount) as _, pageIndex (pageIndex)}",
+    		source: "(91:6) {#each Array(pagesCount) as _, pageIndex (pageIndex)}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (114:4) 
+    // (90:4) 
     function create_dots_slot(ctx) {
     	let div;
     	let each_blocks = [];
     	let each_1_lookup = new Map();
     	let current;
-    	let each_value = Array(/*pagesCount*/ ctx[7]);
+    	let each_value = Array(/*pagesCount*/ ctx[6]);
     	validate_each_argument(each_value);
-    	const get_key = ctx => /*pageIndex*/ ctx[11];
+    	const get_key = ctx => /*pageIndex*/ ctx[10];
     	validate_each_keys(ctx, each_value, get_each_context, get_key);
 
     	for (let i = 0; i < each_value.length; i += 1) {
@@ -18769,7 +18814,7 @@ var app = (function () {
 
     			attr_dev(div, "slot", "dots");
     			attr_dev(div, "class", "flex");
-    			add_location(div, file$a, 113, 4, 2767);
+    			add_location(div, file$a, 89, 4, 2153);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -18781,8 +18826,8 @@ var app = (function () {
     			current = true;
     		},
     		p: function update(ctx, dirty) {
-    			if (dirty & /*currentPageIndex, Array, pagesCount*/ 192) {
-    				each_value = Array(/*pagesCount*/ ctx[7]);
+    			if (dirty & /*currentPageIndex, Array, pagesCount*/ 96) {
+    				each_value = Array(/*pagesCount*/ ctx[6]);
     				validate_each_argument(each_value);
     				group_outros();
     				validate_each_keys(ctx, each_value, get_each_context, get_key);
@@ -18819,14 +18864,14 @@ var app = (function () {
     		block,
     		id: create_dots_slot.name,
     		type: "slot",
-    		source: "(114:4) ",
+    		source: "(90:4) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (127:4) 
+    // (115:4) 
     function create_next_slot(ctx) {
     	let div;
     	let fa;
@@ -18848,8 +18893,8 @@ var app = (function () {
     			div = element("div");
     			create_component(fa.$$.fragment);
     			attr_dev(div, "slot", "next");
-    			attr_dev(div, "class", "custom-arrow svelte-m2mpfv");
-    			add_location(div, file$a, 126, 4, 3211);
+    			attr_dev(div, "class", "custom-arrow svelte-mta0sx");
+    			add_location(div, file$a, 114, 4, 2890);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -18861,7 +18906,7 @@ var app = (function () {
     					div,
     					"click",
     					function () {
-    						if (is_function(/*showNextPage*/ ctx[5])) /*showNextPage*/ ctx[5].apply(this, arguments);
+    						if (is_function(/*showNextPage*/ ctx[4])) /*showNextPage*/ ctx[4].apply(this, arguments);
     					},
     					false,
     					false,
@@ -18895,14 +18940,14 @@ var app = (function () {
     		block,
     		id: create_next_slot.name,
     		type: "slot",
-    		source: "(127:4) ",
+    		source: "(115:4) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (100:0) {#key weddingImages}
+    // (76:0) {#key weddingImages}
     function create_key_block(ctx) {
     	let carousel;
     	let current;
@@ -18916,46 +18961,46 @@ var app = (function () {
     					next: [
     						create_next_slot,
     						({ showPrevPage, showNextPage, currentPageIndex, pagesCount, showPage }) => ({
-    							4: showPrevPage,
-    							5: showNextPage,
-    							6: currentPageIndex,
-    							7: pagesCount,
-    							8: showPage
+    							3: showPrevPage,
+    							4: showNextPage,
+    							5: currentPageIndex,
+    							6: pagesCount,
+    							7: showPage
     						}),
-    						({ showPrevPage, showNextPage, currentPageIndex, pagesCount, showPage }) => (showPrevPage ? 16 : 0) | (showNextPage ? 32 : 0) | (currentPageIndex ? 64 : 0) | (pagesCount ? 128 : 0) | (showPage ? 256 : 0)
+    						({ showPrevPage, showNextPage, currentPageIndex, pagesCount, showPage }) => (showPrevPage ? 8 : 0) | (showNextPage ? 16 : 0) | (currentPageIndex ? 32 : 0) | (pagesCount ? 64 : 0) | (showPage ? 128 : 0)
     					],
     					dots: [
     						create_dots_slot,
     						({ showPrevPage, showNextPage, currentPageIndex, pagesCount, showPage }) => ({
-    							4: showPrevPage,
-    							5: showNextPage,
-    							6: currentPageIndex,
-    							7: pagesCount,
-    							8: showPage
+    							3: showPrevPage,
+    							4: showNextPage,
+    							5: currentPageIndex,
+    							6: pagesCount,
+    							7: showPage
     						}),
-    						({ showPrevPage, showNextPage, currentPageIndex, pagesCount, showPage }) => (showPrevPage ? 16 : 0) | (showNextPage ? 32 : 0) | (currentPageIndex ? 64 : 0) | (pagesCount ? 128 : 0) | (showPage ? 256 : 0)
+    						({ showPrevPage, showNextPage, currentPageIndex, pagesCount, showPage }) => (showPrevPage ? 8 : 0) | (showNextPage ? 16 : 0) | (currentPageIndex ? 32 : 0) | (pagesCount ? 64 : 0) | (showPage ? 128 : 0)
     					],
     					prev: [
     						create_prev_slot,
     						({ showPrevPage, showNextPage, currentPageIndex, pagesCount, showPage }) => ({
-    							4: showPrevPage,
-    							5: showNextPage,
-    							6: currentPageIndex,
-    							7: pagesCount,
-    							8: showPage
+    							3: showPrevPage,
+    							4: showNextPage,
+    							5: currentPageIndex,
+    							6: pagesCount,
+    							7: showPage
     						}),
-    						({ showPrevPage, showNextPage, currentPageIndex, pagesCount, showPage }) => (showPrevPage ? 16 : 0) | (showNextPage ? 32 : 0) | (currentPageIndex ? 64 : 0) | (pagesCount ? 128 : 0) | (showPage ? 256 : 0)
+    						({ showPrevPage, showNextPage, currentPageIndex, pagesCount, showPage }) => (showPrevPage ? 8 : 0) | (showNextPage ? 16 : 0) | (currentPageIndex ? 32 : 0) | (pagesCount ? 64 : 0) | (showPage ? 128 : 0)
     					],
     					default: [
     						create_default_slot$3,
     						({ showPrevPage, showNextPage, currentPageIndex, pagesCount, showPage }) => ({
-    							4: showPrevPage,
-    							5: showNextPage,
-    							6: currentPageIndex,
-    							7: pagesCount,
-    							8: showPage
+    							3: showPrevPage,
+    							4: showNextPage,
+    							5: currentPageIndex,
+    							6: pagesCount,
+    							7: showPage
     						}),
-    						({ showPrevPage, showNextPage, currentPageIndex, pagesCount, showPage }) => (showPrevPage ? 16 : 0) | (showNextPage ? 32 : 0) | (currentPageIndex ? 64 : 0) | (pagesCount ? 128 : 0) | (showPage ? 256 : 0)
+    						({ showPrevPage, showNextPage, currentPageIndex, pagesCount, showPage }) => (showPrevPage ? 8 : 0) | (showNextPage ? 16 : 0) | (currentPageIndex ? 32 : 0) | (pagesCount ? 64 : 0) | (showPage ? 128 : 0)
     					]
     				},
     				$$scope: { ctx }
@@ -18974,7 +19019,7 @@ var app = (function () {
     		p: function update(ctx, dirty) {
     			const carousel_changes = {};
 
-    			if (dirty & /*$$scope, showNextPage, pagesCount, currentPageIndex, showPrevPage, weddingImages*/ 33010) {
+    			if (dirty & /*$$scope, showNextPage, pagesCount, currentPageIndex, showPrevPage, weddingImages*/ 16506) {
     				carousel_changes.$$scope = { dirty, ctx };
     			}
 
@@ -18998,7 +19043,7 @@ var app = (function () {
     		block,
     		id: create_key_block.name,
     		type: "key",
-    		source: "(100:0) {#key weddingImages}",
+    		source: "(76:0) {#key weddingImages}",
     		ctx
     	});
 
@@ -19032,13 +19077,13 @@ var app = (function () {
     			if (!src_url_equal(img.src, img_src_value = /*flowerSrc*/ ctx[0])) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "flower");
     			attr_dev(img, "class", "w-8");
-    			add_location(img, file$a, 94, 2, 2258);
+    			add_location(img, file$a, 70, 2, 1644);
     			attr_dev(div0, "class", "flex justify-center mt-20");
-    			add_location(div0, file$a, 93, 0, 2215);
+    			add_location(div0, file$a, 69, 0, 1601);
     			attr_dev(p, "class", "text-xs mb-8 tracking-widest");
-    			add_location(p, file$a, 97, 2, 2347);
+    			add_location(p, file$a, 73, 2, 1733);
     			attr_dev(div1, "class", "text-center");
-    			add_location(div1, file$a, 96, 0, 2318);
+    			add_location(div1, file$a, 72, 0, 1704);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -19101,19 +19146,6 @@ var app = (function () {
     	return block;
     }
 
-    function detectMobileDevice(agent) {
-    	// const mobileRegex = [
-    	//   /Android/i,
-    	//   /iPhone/i,
-    	//   /iPad/i,
-    	//   /iPod/i,
-    	//   /BlackBerry/i,
-    	//   /Windows Phone/i,
-    	// ];
-    	// return mobileRegex.some((mobile) => agent.match(mobile));
-    	return (/iPhone|iPad|iPod|Android/i).test(window.navigator.userAgent);
-    }
-
     function instance$b($$self, $$props, $$invalidate) {
     	let { $$slots: slots = {}, $$scope } = $$props;
     	validate_slots('Gallery', slots, []);
@@ -19125,7 +19157,8 @@ var app = (function () {
     			res.items.forEach(itemRef => {
     				getDownloadURL(itemRef).then(url => {
     					// 1번째 방법
-    					$$invalidate(1, weddingImages = [...weddingImages, url]);
+    					// weddingImages = [...weddingImages, url];
+    					$$invalidate(1, weddingImages = [...weddingImages, { url }]);
     				}); // 2번째 방법
     				// weddingImages.push(url);
     				// weddingImages = weddingImages;
@@ -19135,7 +19168,6 @@ var app = (function () {
     		});
     	});
 
-    	const isMobile = detectMobileDevice();
     	const writable_props = ['flowerSrc'];
 
     	Object.keys($$props).forEach(key => {
@@ -19158,9 +19190,7 @@ var app = (function () {
     		faChevronLeft,
     		CustomDot,
     		flowerSrc,
-    		weddingImages,
-    		detectMobileDevice,
-    		isMobile
+    		weddingImages
     	});
 
     	$$self.$inject_state = $$props => {

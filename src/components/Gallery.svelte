@@ -20,8 +20,8 @@
         res.items.forEach((itemRef) => {
           getDownloadURL(itemRef).then((url) => {
             // 1번째 방법
-            weddingImages = [...weddingImages, url];
-
+            // weddingImages = [...weddingImages, url];
+            weddingImages = [...weddingImages, { url }];
             // 2번째 방법
             // weddingImages.push(url);
             // weddingImages = weddingImages;
@@ -32,34 +32,10 @@
         console.log(error);
       });
   });
-
-  function detectMobileDevice(agent) {
-    // const mobileRegex = [
-    //   /Android/i,
-    //   /iPhone/i,
-    //   /iPad/i,
-    //   /iPod/i,
-    //   /BlackBerry/i,
-    //   /Windows Phone/i,
-    // ];
-
-    // return mobileRegex.some((mobile) => agent.match(mobile));
-    return /iPhone|iPad|iPod|Android/i.test(window.navigator.userAgent);
-  }
-
-  const isMobile = detectMobileDevice(window.navigator.userAgent);
-
-  // if (isMobile) {
-  //   console.log("current device is mobile");
-  //   alert("current device is mobile");
-  // } else {
-  //   console.log("current device is not mobile");
-  //   alert("current device is not mobile");
-  // }
 </script>
 
 <style>
-  .color-container {
+  .image-container {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -84,7 +60,7 @@
   }
   @media (min-width: 800px) {
     .gallery-size {
-      height: 75%;
+      height: 80%;
       width: auto;
     }
   }
@@ -118,11 +94,23 @@
         />
       {/each}
     </div>
-    {#each weddingImages as weddingImage}
-      <div class="color-container">
-        <img src="{weddingImage}" alt="weddingPhoto" class="gallery-size" />
-      </div>
-    {/each}
+    {#if weddingImages.length !== 0}
+      <img
+        src="https://via.placeholder.com/300x200/FFFFFF/D8D8D8/?text=loading"
+        alt="sampleImage"
+        class="gallery-size"
+      />
+    {:else}
+      {#each weddingImages as weddingImage}
+        <div class="image-container">
+          <img
+            src="{weddingImage.url}"
+            alt="weddingPhoto"
+            class="gallery-size"
+          />
+        </div>
+      {/each}
+    {/if}
     <div slot="next" on:click="{showNextPage}" class="custom-arrow">
       <Fa size="lg" color="#F9E79F" icon="{faChevronRight}" />
     </div>
