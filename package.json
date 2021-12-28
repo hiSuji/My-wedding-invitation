@@ -46,6 +46,7 @@
     "sirv-cli": "^1.0.0",
     "svelte-fa": "^2.4.0",
     "svelte-image-gallery": "^1.3.0",
+    "svelte-notifications": "^0.9.93",
     "typescript": "^4.5.4"
   }
 }

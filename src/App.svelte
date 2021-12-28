@@ -5,6 +5,7 @@
   import Gallery from "@/components/Gallery.svelte";
   import Place from "@/components/Place.svelte";
   import Contact from "@/components/Contact.svelte";
+  import Notifications from "svelte-notifications";
   import Footer from "@/components/Footer.svelte";
 
   let flowerSrc = "images/flower.png";
@@ -27,12 +28,14 @@
   } */
 </style>
 
-<main class="w-10/12 body-margin">
-  <Welcome />
-  <Invitation flowerSrc="{flowerSrc}" />
-  <Calendar flowerSrc="{flowerSrc}" />
-  <Gallery flowerSrc="{flowerSrc}" />
-  <Place flowerSrc="{flowerSrc}" />
-  <Contact flowerSrc="{flowerSrc}" />
-  <Footer />
-</main>
+<Notifications>
+  <main class="w-10/12 body-margin">
+    <Welcome />
+    <Invitation flowerSrc="{flowerSrc}" />
+    <Calendar flowerSrc="{flowerSrc}" />
+    <Gallery flowerSrc="{flowerSrc}" />
+    <Place flowerSrc="{flowerSrc}" />
+    <Contact flowerSrc="{flowerSrc}" />
+    <Footer />
+  </main>
+</Notifications>

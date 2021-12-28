@@ -7,5 +7,5 @@
 </style>
 
 <div>
-  <p class="text-center mt-20">잘살겠습니다.</p>
+  <p class="text-center text-sm mt-20">잘살겠습니다.</p>
 </div>

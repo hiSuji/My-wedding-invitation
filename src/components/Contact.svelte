@@ -5,6 +5,10 @@
   import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
   import Button, { Label } from "@smui/button";
 
+  import { getNotificationsContext } from "svelte-notifications";
+
+  const { addNotification } = getNotificationsContext();
+
   export let flowerSrc;
 
   let expanded;
@@ -37,13 +41,14 @@
     } catch (error) {
       console.log(error);
     }
-
     if (result) {
-      resultMsg.innerText = "성공";
-    } else {
-      resultMsg.innerText = "실패";
+      addNotification({
+        text: "계좌번호가 복사되었습니다.",
+        position: "bottom-center",
+        type: "success",
+        removeAfter: 1000,
+      });
     }
-    return;
   }
 </script>
 
@@ -78,6 +83,10 @@
     font-size: 0.75rem;
     width: 2rem;
   }
+
+  :global(.default-position-style-bottom-center) {
+    font-size: 0.7rem;
+  }
 </style>
 
 <div class="flex justify-center mt-20">
@@ -105,7 +114,7 @@
         </p>
         <Button
           color="secondary"
-          on:click|once="{() => copyAccount('Man')}"
+          on:click="{() => copyAccount('Man')}"
           variant="outlined"
           class="copyBtn"
         >
@@ -129,7 +138,7 @@
         </p>
         <Button
           color="secondary"
-          on:click|once="{() => copyAccount('Woman')}"
+          on:click="{() => copyAccount('Woman')}"
           variant="outlined"
           class="copyBtn"
         >
